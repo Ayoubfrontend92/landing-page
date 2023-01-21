@@ -1,26 +1,26 @@
-import Container from "./components/Container"
+
+
+import {Routes, Route} from "react-router-dom"
+import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
-import MiddleFirst from "./components/MiddleFirst"
-import MiddleSecond from "./components/MiddleSecond"
-import MiddleThird from "./components/MiddleThird"
+import LandingPage from "./components/LandingPage"
 import Navbar from "./components/Navbar"
-import SocialLinks from "./components/SocialLinks"
-import Sub from "./components/Sub"
 
 function App() {
 
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <SocialLinks/>
-      <Container/>
-      <MiddleFirst/>
-      <MiddleSecond/>
-      <MiddleThird/>
-      <Sub/>
-      <Footer/>
+        <Navbar/>
+        <Hero/>
+        <Routes>
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+        <Footer/>
+ 
+         
+    
     </div>
   )
 }

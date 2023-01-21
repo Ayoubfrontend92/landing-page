@@ -9,6 +9,7 @@ function classNames(...classes) {
 import React, { useState } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { MdOutlineClose } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -18,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className='absolute mt-8 md:mt-0  w-full flex justify-between items-center  p-4 md:p-10'>
-      <h1 className='text-white lg:ml-[20px] text-3xl hover:text-red-400 cursor-pointer font-bold md:text-5xl ml-2 font-sans md:ml-[20px]  z-20 '>Blogr</h1>
+      <Link to='/' className='text-white lg:ml-[20px] text-3xl hover:text-red-400 cursor-pointer font-bold md:text-5xl ml-2 font-sans md:ml-[20px]  z-20 '>Blogr</Link>
       <div className=' justify-center absolute 2xl:ml-[350px]  md:ml-[200px] mt-3 hidden md:block w-[250px]'>
         <ul className='flex  justify-between w-[250px]'>
           <li className=''>
@@ -43,15 +44,15 @@ const Navbar = () => {
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <Link 
+                          to='/contact'
                           className={classNames(
                             active ? 'bg-white text-black' : 'text-gray-700',
                             'block px-4 py-2 text-sm'
                           )}
                         >
                           Contact
-                        </a>
+                        </Link >
                       )}
                     </Menu.Item>
                     <Menu.Item>

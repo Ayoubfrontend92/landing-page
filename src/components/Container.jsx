@@ -5,7 +5,7 @@ const Container = () => {
   return (
     <div>
 
-        <h1 className='text-center font-bold text-[#2f2e41]/80 text-2xl md:text-4xl mt-8 md:mt-[80px]'>Designed for the future </h1>
+        <h1 className='text-center font-bold text-[#2f2e41] text-2xl md:text-4xl mt-8 md:mt-[80px]'>Designed for the future </h1>
         
      
       <div className='flex md:flex-row-reverse md:justify-around justify-center text-center md:text-start  items-center md:mt-[80px]  flex-col'>
