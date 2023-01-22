@@ -27,7 +27,7 @@ const Navbar = () => {
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center rounded-md   bg-none px-4 py-2 text-sm font-medium text-white ">
-                  Product
+                  Products
                   <BiChevronDown className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                 </Menu.Button>
               </div>
@@ -57,15 +57,15 @@ const Navbar = () => {
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <Link
+                        to='/products'
                           className={classNames(
                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                             'block px-4 py-2 text-sm'
                           )}
                         >
-                          Newsleter
-                        </a>
+                          Products
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
