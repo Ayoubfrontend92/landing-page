@@ -110,28 +110,28 @@ const Navbar = () => {
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <Link
+                          to='/contact'
                           className={classNames(
                             active ? 'bg-white text-black' : 'text-gray-700',
                             'block px-4 py-2 text-sm'
                           )}
                         >
                           Contact
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <Link
+                          to='/products'
                           className={classNames(
                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                             'block px-4 py-2 text-sm'
                           )}
                         >
-                          Newsleter
-                        </a>
+                          Products
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>

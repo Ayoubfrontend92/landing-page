@@ -5,7 +5,7 @@ const Footer = () => {
     
         <footer class="bg-red-100 text-center lg:text-left">
           <div class="text-red-500 text-center p-4">
-           © 2023 Copyright: <a class="text-gray-800" href='https://github.com/Ayoubfrontend92'>Ayoub Rezaei @ Adubi</a>
+           © 2023 Copyright: <a class="text-gray-800 font-bold" href='https://github.com/Ayoubfrontend92'>Ayoub Rezaei @ Adubi</a>
         </div>
         </footer>
     
